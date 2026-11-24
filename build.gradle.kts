@@ -21,8 +21,10 @@ val gitCommitHash = "git rev-parse --verify --short HEAD".execute()
 // also the soname
 val moduleId by extra("hostsredirect")
 val moduleName by extra("Hosts Redirect")
-val verName by extra("v1")
-val verCode by extra(gitCommitCount)
+val verName by extra("v1.1")
+// High enough to upgrade over the upstream release (whose versionCode is the
+// upstream commit count). This is a local AAP-AN00 build.
+val verCode by extra(9999)
 val commitHash by extra(gitCommitHash)
 val abiList by extra(listOf("arm64-v8a"))
 
