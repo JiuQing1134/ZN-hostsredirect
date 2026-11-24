@@ -168,5 +168,5 @@ androidComponents.onVariants { variant ->
 }
 
 dependencies {
-    implementation(libs.cxx)
+    // No C++ runtime dependency: the module only uses libc/liblog.
 }
